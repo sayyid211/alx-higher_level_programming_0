@@ -1,0 +1,1 @@
+Python modules allows for modular programming, breaking down components into separate files.
