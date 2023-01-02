@@ -13,7 +13,7 @@ class Rectangle:
     @property
     def height(self):
         """height getter"""
-        return self.__heightx
+        return self.__height
 
     @height.setter
     def height(self, value):
