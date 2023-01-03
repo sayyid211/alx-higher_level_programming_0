@@ -52,4 +52,5 @@ class Rectangle:
         """rectangle str"""
         if self.__width == 0 or self.__height == 0:
             return ('')
-        return ('{}{}'.format(('#' * self.__width + '\n') * (self.__height - 1), '#' * self.__width))
+        return ('{}{}'.format(('#' * self.__width + '\n')
+                              * (self.__height - 1), '#' * self.__width))
