@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def magic_string(tmp=[]):
-    tmp += ['Holberton']
+    tmp += ['BestSchool']
     return ', '.join(tmp)
