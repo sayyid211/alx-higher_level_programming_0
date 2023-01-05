@@ -17,21 +17,20 @@ def matrix_divided(matrix, div):
 
     row_size = None
     for row in matrix:
-        #check if is list
+        """check if is list"""
         if type(row) is not list:
             raise TypeError(errors['matrix'])
 
-        #check size of rows
+        """check size of rows"""
         if row_size is None:
             row_size = len(row)
         elif row_size != len(row):
             raise TypeError(errors['row'])
 
-        #check that all items are valid numbers (int/float)
+        """check that all items are valid numbers (int/float)"""
         status = all(type(element) in set([int, float]) for element in row)
         if status is False:
             raise TypeError(errors['matrix'])
-
 
     if type(div) not in [int, float]:
         raise TypeError(errprs['div'])
