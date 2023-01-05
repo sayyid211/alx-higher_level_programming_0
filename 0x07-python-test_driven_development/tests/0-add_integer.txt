@@ -9,15 +9,15 @@ Importing the function from the module:
 
 Regular addition:
 	>>> add_integer(2, 3)
- 5
+	 5
 
 Positive with negative:
 	 >>> add_integer(2, -4)
--2
+	 -2
 
 Negative with positive:
 	 >>> add_integer(-6, 8)
-2
+	 2
 
 Addition over multiple values:
 	 >>> [add_integer(i, i ** 2) for i in range(6)]
@@ -25,15 +25,15 @@ Addition over multiple values:
 
 Float with int:
       >>> add_integer(2.1, 4)
-6
+      6
 
 Int with float:
     >>> add_integer(5, 7.8)
-12
+    12
 
 Both float:
      >>> add_integer(2.45, 3.1)
-5
+     5
 
 Passed NaN:
        >>> add_integer(1, float('nan'))
@@ -60,13 +60,13 @@ Checking number with non-number:
 TypeError: b must be an integer
 
 One argument:
-    >>> add_integer(1)
-    99
+	>>> add_integer(1)
+    	99
 
 Non arguments:
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
+	>>> add_integer()
+    	Traceback (most recent call last):
+    	...
 TypeError: add_integer() missing 1 required positional argument: 'a'
 
 Module docstring:
